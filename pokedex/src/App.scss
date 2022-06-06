@@ -1,12 +1,14 @@
 body {
-  background: linear-gradient(-45deg, #ffffff, #72e73c, #3ed523, #000000);
+  background: linear-gradient(-95deg, #ff0000, #ffe4e4, #ffb8b8, #ff0000);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 6s ease infinite;
   height: 100vh;
   margin: 0;
   padding: 0;
 
   color: white;
+
+  height: auto;
 }
 
 @keyframes gradient {
@@ -52,14 +54,41 @@ body {
 }
 
 .main-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+
   font-family: 'Alpha';
   font-size: 149px;
-  color: #fff;
+  
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  text-decoration-style: dotted;
+
+
+  color: rgb(255, 0, 0);
 
   -webkit-text-stroke-width: 0.1px;
-  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
 
   @media screen and (max-width: 756px) {
     font-size: 52px !important;
   }
+}
+
+.total_exp {
+  font-size: 45px;
+  font-family: 'Stolzl Display';
+
+  font-weight: 900;
+
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-decoration: underline;
+
+  padding: 30px;
 }
