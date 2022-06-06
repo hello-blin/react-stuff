@@ -11,8 +11,12 @@
     padding: 30px;
     margin-bottom: 20px;
 
-    border: 1px solid black;
-
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 50px;
+    border: 1px solid rgb(255, 255, 255);
 
     .pokemon-title {
         font-family: 'Alpha';
@@ -30,6 +34,10 @@
 
         width: 250px;
         height: auto;
+
+        box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+
+        border-radius: 50%;
     }
 
     .pokemon-type {
@@ -44,9 +52,10 @@
         text-transform: capitalize;
 
         font-family: 'Stolzl Display';
+        font-size: 19px;
 
         font-weight: 900;
-        padding: 5px;
+        padding: 15px 10px 10px 15px;
     }
 
     .pokemon-exp {
@@ -61,8 +70,9 @@
         text-transform: capitalize;
 
         font-family: 'Stolzl Display';
+        font-size: 19px;
 
         font-weight: 900;
-        padding: 5px;
+        padding: 10px;
     }
 }
