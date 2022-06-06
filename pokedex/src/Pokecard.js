@@ -2,9 +2,13 @@ import React, { Component } from 'react'
 import './Pokecard.scss'
 
 const POKE_API = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/"
+
+const form = (num) => (
+    num <= 999 ? `00${num}`.slice(-3) : num);
+
 export class Pokecard extends Component {
     render() {
-        let imgSrc = `${POKE_API}00${this.props.id}.png`;
+        let imgSrc = `${POKE_API}${form(this.props.id)}.png`;
         const props = this.props
         return (
             <div className="pokecard">
