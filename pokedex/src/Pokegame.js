@@ -27,9 +27,10 @@ export class Pokegame extends Component {
         return (
             <>
                 <h1 className='main-title'>Welcome to POKEDEX GAME</h1>
-                <Pokedex pokemon={hand1} exp={pow1} className="firstHand" />
-                <Pokedex pokemon={hand2} exp={pow2} />
+                <Pokedex pokemon={hand1} exp={pow1} isWinner={pow1 > pow2}/>
+                <Pokedex pokemon={hand2} exp={pow2} isWinner={pow2 > pow1}/>
 
+                
             </>
         )
     }

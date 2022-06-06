@@ -92,3 +92,20 @@ body {
 
   padding: 30px;
 }
+
+.result{
+  font-family: 'Alpha';
+  font-size: 86px;
+
+  color: red;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+
+  background-color: #ff0000;
+  
+  border: 1px solid white;
+  border-radius: 50px;
+  
+  padding: 20px;
+
+}
