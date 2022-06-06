@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import Pokedex from './Pokedex'
+import './App.scss'
+
+
 
 export class Pokegame extends Component {
     static defaultProps = {
@@ -15,6 +18,9 @@ export class Pokegame extends Component {
         ]
     }
     render() {
+        function reloadPage() {
+            window.location.reload();
+        }
         let hand1 = []
         let hand2 = [...this.props.pokemon]
         while (hand1.length < hand2.length) {
@@ -27,10 +33,13 @@ export class Pokegame extends Component {
         return (
             <>
                 <h1 className='main-title'>Welcome to POKEDEX GAME</h1>
-                <Pokedex pokemon={hand1} exp={pow1} isWinner={pow1 > pow2}/>
-                <Pokedex pokemon={hand2} exp={pow2} isWinner={pow2 > pow1}/>
+                <div className="pa">
+                    <button onClick={reloadPage}>Play Again </button>
+                </div>
+                <Pokedex pokemon={hand1} exp={pow1} isWinner={pow1 > pow2} />
+                <Pokedex pokemon={hand2} exp={pow2} isWinner={pow2 > pow1} />
 
-                
+
             </>
         )
     }
